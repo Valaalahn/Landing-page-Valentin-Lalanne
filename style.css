@@ -1,0 +1,394 @@
+/* OVERALL */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-weight: 900;
+}
+
+h2{
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+h3{
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+p{
+    font-family: "Lora";
+}
+
+a{
+    color:black;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background-color: white;
+    padding: 20px 0px;
+    font-size: 28px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: "Roboto";
+    position: sticky;
+    top:0px;
+    z-index: 99999;
+}
+
+.navbar div{
+    max-width: 100%;
+}
+
+#navbar-logo {
+    text-align: left;
+    padding: 0 10px;
+    font-size: 37px;
+    font-family: "Roboto";
+}
+
+.btn-homepage, .btn-quick-access {
+    display: inline-block;
+    padding:15px 25px;
+    transition: 0.3s;
+    /* background-color: rgb(66,122,111); */
+}
+
+.btn-homepage:hover{
+    transform: scale(1.2);
+}
+
+.btn-quick-access:hover{
+    transform: scale(1.2);
+}
+
+#navbar-menu {
+    text-align: right;
+    padding: 0 10px;
+}
+
+.menu-list-inline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.menu-list-inline li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.btn-quick-access{
+    text-align: center;
+}
+
+/* ABOUT INTRO */
+.intro{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.intro-text{
+    background-color:#9fa1e1;
+    text-align: center;
+}
+
+.intro-text h2{
+    color:white;
+    font-size: 70px;
+    padding-top: 20px;
+    font-family: "Roboto";
+}
+
+.intro-text p{
+    color:white;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: "Lora";
+}
+
+.intro img{
+    height: 500px;
+    Width: 100%;
+    object-fit: cover;
+}
+
+.btn-start-now{
+    padding: 15px 25px;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    color:#282c47;
+    box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-family: "Roboto";
+}
+
+.btn-start-now:hover{
+    background-color:#282c47;
+    color:white;
+    font-weight: bold;
+}
+
+/* ABOUT SERVICES */
+
+.service-section {
+    margin-top: 20px;
+    max-width: 2000px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.service{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin: 30px 0;
+    position: relative;
+}
+
+.service img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+.service a{
+    position: absolute;
+    bottom: 30px;
+    padding: 15px 25px;
+    background-color: #282c47;
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto";
+}
+
+.service div{
+    padding: 0 35px;
+}
+
+.more-services {
+    text-align: center;
+    margin: 20px;
+}
+
+.btn-more-services{
+    padding: 15px 25px;
+    background-color: #282c47;
+    font-size: 30px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+}
+
+.btn-more-services:hover{
+    background-color: white;
+    color:#282c47;
+    border: solid black 1px;
+    font-weight: bold;
+}
+
+.service-section h2{
+    font-size: 50px;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.service h3{
+    font-size: 20px;
+    font-family: "Roboto";
+}
+
+.service p{
+    font-size:16px;
+    font-family: "Lora";
+    /* margin-bottom: 1px; */
+}
+
+/* FORMS */
+.forms{
+    margin: 80px 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.forms img{
+    width: 100%;
+    height: 804px;
+    object-fit: cover;
+    margin: 0px;
+}
+
+/* ABOUT REVIEWS */
+.reviews-section{
+    margin: 20px 0;
+    width: 100%;
+}
+
+.reviews-section h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Roboto";
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.review{
+    width:100%;
+    margin-bottom: 5px;
+    background-color: rgb(216, 199, 199);
+}
+
+.btn-all-reviews{
+    padding: 15px 25px;
+    background-color: #282c47;
+    font-size: 30px;
+    border-radius: 5px;
+    color:white;
+    text-decoration: none;
+}
+
+.btn-all-reviews:hover{
+    background-color: white;
+    color:#282c47;
+    border: solid black 1px;
+    font-weight: bold;
+}
+
+.more-reviews{
+    text-align: center;
+}
+
+.review h3{
+    font-size: 25px;
+    font-family: "Roboto";
+}
+
+.review p{
+    font-size:20px;
+    padding:0 100px;
+    font-family: "Lora";
+}
+
+/* FOOTER */
+.footer{
+    margin:40px 0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer p{
+    margin:20px 0;
+}
+
+.footer ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.footer{
+    border-top: solid grey 1px;
+}
+
+.footer ul li{
+    display: inline;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 35px;
+    padding: 0;
+}
+
+.insta{
+    color:#C32AA3;
+}
+
+.youtube{
+    color:#FF0000;
+}
+
+.linkedin{
+    color: #007BB5;
+}
+
+.facebook{
+    color: #3B5998;
+}
+
+.tiktok{
+    box-shadow: #3B5998;
+    text-shadow: 10px 1px  #EE1D52, -10px 1px #00F2EA;
+}
+
+/* AUTOFIT */
+@media(max-width: 1275px){
+    .navbar{grid-template-columns: 20% 80%}
+    .service a{
+        position: absolute;
+        bottom: 10px;
+    }
+}
+
+@media(max-width:1220px){
+    .services{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 840px){
+    .intro-text h2{
+        font-size: 50px;
+    }
+    .intro-text p{
+        font-size: 20px;
+    }
+    .btn-quick-access{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:950px){
+    .review p{
+        padding: 0;
+    }
+    .footer ul li{
+        margin: 5px;
+    }
+    .service a{
+        position: absolute;
+        bottom:0px;
+        Height:25px;
+        width: 70px;
+    }
+    .intro-text p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:850px){
+    .btn-start-now{
+        display: inline-block;
+    }
+}
+
